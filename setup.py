@@ -6,18 +6,18 @@ with open("README.md", "r") as f:
 setuptools.setup(
     name="MemePy",
     version="1.2.4",
-    description="Meme Generator for python",
+    description="Fork of meme generator for Python by Julian Brandt",
     long_description=readme,
     long_description_content_type="text/markdown",
-    author="Julian Brandt",
-    author_email='julian@julianbrandt.dk',
-    url="https://github.com/julianbrandt/MemePy",
+    author="ugliestie",
+    author_email='ugliestie@proton.me',
+    url="https://github.com/ugliestie/MemePy",
     packages=["MemePy"],
     package_data={"MemePy": ["Resources/*/*"]},
     license="MIT",
     install_requires=[
-        "pillow~=8.4",
-        "requests~=2.32"
+        "pillow",
+        "requests"
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
