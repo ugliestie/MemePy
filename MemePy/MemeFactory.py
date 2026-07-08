@@ -10,17 +10,23 @@ from .MemeModel import MemeImage
 
 MemeLib = generate_standard_meme_dict()
 
+def textsize(text, font):
+    im = Image.new(mode="P", size=(0, 0))
+    draw = ImageDraw.Draw(im)
+    _, _, width, height = draw.textbbox((0, 0), text=text, font=font)
+    return width, height
+
 def split_line(text, font, width):
     if len(text) > 200:
         raise ValueError("Text input must not be longer than 150 characters")
     text = text
     returntext = ""
     while text:
-        if (font.getsize(text)[0]) < width:
+        if (font.getbbox(text)[2]) < width:
             returntext += text
             break
         for i in range(len(text), 0, -1):
-            if (font.getsize(text[:i])[0]) < width:
+            if (font.getbbox(text[:i])[2]) < width:
                 if ' ' not in text[:i]:
                     returntext += text[:i] + "-\n"
                     text = text[i:]
@@ -37,9 +43,9 @@ def split_line(text, font, width):
     return returntext
 
 
-def get_textbox_margins(text, font, max_size, drawer):
-    width_margin = round((max_size[0] - drawer.textsize(text, font)[0]) / 2)
-    height_margin = round((max_size[1] - drawer.textsize(text, font)[1]) / 2)
+def get_textbox_margins(text, font, max_size):
+    width_margin = round((max_size[0] - textsize(text, font)[0]) / 2)
+    height_margin = round((max_size[1] - textsize(text, font)[1]) / 2)
     return width_margin, height_margin
 
 
@@ -198,8 +204,7 @@ class MemeFactory:
         margins = list(get_textbox_margins(
             split_line(text, text_zone.font, text_zone.dimensions[0]),
             text_zone.font,
-            text_zone.dimensions,
-            drawer
+            text_zone.dimensions
         ))
         for i in range(2):
             if margins[i] < 0 or not text_zone.centering[i]:

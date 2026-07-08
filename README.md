@@ -6,10 +6,8 @@ Python meme generator originally made for the discord-chat-bot [HydroBot](https:
 
 ## Installation
 
-MemePy can be downloaded as a package from `PyPi`:
-
 ```
->python -m pip install MemePy
+>python -m pip install git+https://github.com/ugliestie/MemePy#egg=MemePy
 ```
 
 You can alternatively just download the zip from here.
@@ -66,8 +64,6 @@ If you wish to import the meme-generation functionality into your own project, u
 
     In other words. The folders inside the given directory *MUST* be named **FontLibrary**, **ImageLibrary** and **MemeLibrary**. The font you choose to use in your extension can be left out of the fonts directory, if it already exists internally in the package resources.
 
-
-
 ## Creating memes on the Command-Line
 
 Using the command-line, you can generate images from templates and save them to disk.
@@ -86,6 +82,7 @@ MemePy <path> <template> <*args> <*options>
 - __\*options__ are the options that modify behavior of the generation.
   - Options are passed with '{}' curly braces.
   - Currently supported options: "stretch".
+  
 ## Built-In template docs
 | Template name          | Arguments       | Image |
 | ------------- | --------------- | ----- |
