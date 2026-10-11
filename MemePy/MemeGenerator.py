@@ -17,7 +17,7 @@ def get_meme_image_bytes(template, args):
     meme_img = MemeFactory.factory_from_template(template, args).output_image
     if hasattr(meme_img, "is_animated") and meme_img.is_animated:
         frames = []
-        for i in range(0, meme_img.n_frames):
+        for i in range(meme_img.n_frames):
             meme_img.seek(i)
             frames.append(meme_img.copy())
         frames[0].save(image_bytes, format="GIF", save_all=True, append_images=frames[1:], duration=meme_img.info['duration'], loop=0)

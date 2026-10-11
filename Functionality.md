@@ -9,7 +9,7 @@ Python meme generator originally made for the discord-chat-bot [HydroBot](https:
 MemePy can be downloaded as a package from `PyPi`:
 
 ```
->python -m pip install MemePy
+>python -m pip install git+https://github.com/ugliestie/MemePy#egg=MemePy
 ```
 
 You can alternatively just download the zip from here.
@@ -86,3 +86,4 @@ MemePy <path> <template> <*args> <*options>
 - __\*options__ are the options that modify behavior of the generation.
   - Options are passed with '{}' curly braces.
   - Currently supported options: "stretch".
+  

@@ -1,9 +1,10 @@
-import json, os
+import json
+import os
 
 from PIL import ImageFont
 
-from .MemeModel import TextZone, MemeImage
 from .definitions import RESOURCE_DIR
+from .MemeModel import MemeImage, TextZone
 
 
 def parse_memelib_json(source, resource_path):

@@ -1,9 +1,10 @@
 from PIL import Image
+
 from MemePy import MemeFactory
 
 memes = MemeFactory.MemeLib
 
-config = {l.split(":")[0]:l.split(":")[1] for l in open("./Docs/docsettings.config", "r").readlines()}
+config = {l.split(":")[0]:l.split(":")[1] for l in open("./Docs/docsettings.config", "r")}
 
 def resize_images(memes):
     max_size = int(config["image_max_size"])
@@ -13,7 +14,7 @@ def resize_images(memes):
             img = Image.open(memes[m].image_file_path)
             if img.mode != 'RGB':
                 img = img.convert('RGB')
-            img.thumbnail((max_size, max_size), Image.ANTIALIAS)
+            img.thumbnail((max_size, max_size), Image.Resampling.LANCZOS)
             img.save("./Docs/Img/" + m + ".jpg")
        except:
             print("Failed to resize image: " + memes[m].image_file_path)

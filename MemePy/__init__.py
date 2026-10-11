@@ -1,6 +1,6 @@
 import sys
 
-from .MemeGenerator import save_meme_to_disk, add_external_resource_dir
+from .MemeGenerator import add_external_resource_dir, save_meme_to_disk
 
 
 def h():

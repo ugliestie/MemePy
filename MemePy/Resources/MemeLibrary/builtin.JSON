@@ -16,18 +16,6 @@
       }
     ]
   },
-  "ItsRetarded": {
-    "filename": "itsretarded.png",
-    "text_zones": [
-      {
-        "pos": [253, 3],
-        "dimensions": [220, 90],
-        "font": "arial.ttf",
-        "font_size": 20,
-        "centering": ["False", "True"]
-      }
-    ]
-  },
   "Headache": {
     "filename": "headache.png",
     "text_zones": [
@@ -119,46 +107,6 @@
         "dimensions": [200, 250],
         "font": "arial.ttf",
         "font_size": 40,
-        "centering": ["True", "True"]
-      }
-    ]
-  },
-  "Classy": {
-    "filename": "classy.jpg",
-    "text_zones": [
-      {
-        "pos": [310, 20],
-        "dimensions": [370, 210],
-        "font": "arial.ttf",
-        "font_size": 40,
-        "centering": ["True", "True"]
-      },
-      {
-        "pos": [310, 270],
-        "dimensions": [370, 210],
-        "font": "BLKCHCRY.TTF",
-        "font_size": 45,
-        "centering": ["True", "True"]
-      }
-    ]
-  },
-  "Cola": {
-    "filename": "cola.jpg",
-    "text_zones": [
-      {
-        "pos": [180, 425],
-        "dimensions": [200, 200],
-        "font": "arial.ttf",
-        "font_size": 36,
-        "centering": ["True", "True"],
-        "text_color": [255, 255, 255]
-      },
-      {
-        "pos": [600, 350],
-        "dimensions": [180, 100],
-        "font": "arial.ttf",
-        "font_size": 36,
-        "angle": 30,
         "centering": ["True", "True"]
       }
     ]
@@ -295,37 +243,6 @@
       }
     ]
   },
-  "Vape": {
-	"filename": "vape.png",
-	 "text_zones": [
-	  {
-		"pos": [455, 0],
-		"dimensions": [382, 256],
-		"font": "arial.ttf",
-		"font_size": 56,
-		"centering": ["True", "True"]
-	  },
-	  {
-		"pos": [455, 262],
-		"dimensions": [382, 256],
-		"font": "arial.ttf",
-		"font_size": 56,
-		"centering": ["True", "True"]
-	  }
-    ]
-  },
-  "Hate": {
-	"filename": "hate.png",
-	"text_zones": [
-      {
-        "pos": [10, 335],
-        "dimensions": [335, 90],
-        "font": "arial.ttf",
-        "font_size": 36,
-        "centering": ["True", "True"]
-	  }
-    ]
-  },
   "BellCurve": {
     "filename": "bellcurve.jpg",
 	"text_zones": [
@@ -351,19 +268,6 @@
 		"centering": ["True", "True"]
 	  }
     ]
-  },
-  "Trump": {
-    "filename": "trump.jpg",
-	"text_zones": [
-	  {
-	    "pos": [369, 274],
-		"dimensions": [261, 233],
-		"font": "arial.ttf",
-		"font_size": 36,
-		"centering": ["True", "True"],
-		"angle": 2
-	  }
-	]
   },
   "LookUp": {
 	"filename": "lookup.gif",
@@ -425,18 +329,6 @@
 		"dimensions": [490, 490],
 		"font": "arial.ttf",
 		"font_size": 48,
-		"centering": ["True", "True"]
-	  }
-	]
-  },
-  "YesHoney": {
-	"filename": "yeshoney.jpg",
-	"text_zones": [
-	  {
-		"pos": [93, 528],
-		"dimensions": [603, 204],
-		"font": "arial.ttf",
-		"font_size": 76,
 		"centering": ["True", "True"]
 	  }
 	]
